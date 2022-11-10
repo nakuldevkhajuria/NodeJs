@@ -26,7 +26,7 @@ if (result === 5) {
     
 }
 
-app.get('/home',middleware2,
+app.get('/home',middleware2 ,
 (req,res) => {
     console.log(req.body);
     res.write('homeRouteIsWorking, and we are using local middleware');
