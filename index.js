@@ -25,7 +25,12 @@ if (result === 5) {
 }
     
 }
-
+app.get('/',
+(req,res) => {
+    
+    res.write('We are on the Root page, and we are using global middleware');
+    res.end();
+})
 app.get('/home',middleware2 ,
 (req,res) => {
     console.log(req.body);
